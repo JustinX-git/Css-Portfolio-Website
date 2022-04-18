@@ -1,0 +1,182 @@
+a{
+  color: hsl(0, 0%, 77%);
+  font-size: 1.1rem;
+}
+
+/* Home Page Styling */
+
+.showcase-container{
+  height: 10rem;
+}
+
+.showcase-container .nav-wrapper #logo{
+  max-width: 100px;
+  min-width: 100px;
+}
+
+
+.nav-wrapper{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .1rem;
+}
+
+.nav-wrapper ul{
+  margin-top: .5rem;
+}
+
+ .showcase-container .header-container{
+  display: none;
+}
+
+#minor-showcase{
+  height: 10rem;
+  background: url(../img/showcase.jpg) center center /cover;
+}
+
+#minor-showcase .nav-wrapper #logo{
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+}
+
+#home-A > p,
+#home-B > p,
+#home-C > p{
+  font-size: 1rem;
+}
+
+
+.specialties,
+.stats,
+.creative-process,
+.testimonials,
+.contact-info,
+.work-gallery{
+  grid-template-columns: 1fr;
+}
+
+.specialties,
+.creative-process{
+  row-gap: .7rem;
+}
+
+.testimonials, 
+.contact-info{
+  row-gap: 1rem;
+}
+
+.creative-process > div .step-icon:hover{
+  transform: scale(1);
+}
+
+.creative-process > div .step-icon:hover + h3{
+  transform: translateY(0);
+}
+
+.creative-process > div .step-icon:hover ~ p{
+  transform: translateY(0);
+}
+
+.specialties > div{
+  padding-bottom: .6rem;
+  border-bottom: 1px solid goldenrod;
+}
+
+.specialties > div:last-child{
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.stats div > ul{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-container{
+  background: url(./img/showcase.jpg) center 30% /cover;
+  color: #fff;
+  border-bottom: 2px solid goldenrod;
+}
+
+/* About Page  media queries */
+.bio-info{
+  display: grid;
+  grid-template-areas:
+  "bioimage"
+  "bio"
+  "bio"
+  "aw1"
+  "aw2"
+  "aw3";
+  column-gap: 1.2rem;
+  row-gap: 2rem;
+}
+
+#about-D{
+display: none;
+}
+
+.testimonials > div{
+  border-bottom: 2px solid rgba(218, 165, 32, 0.36);
+  padding-bottom: .5rem;
+}
+
+.testimonials > div:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Work Page Media Queries */
+#work-B{
+  width: 90%;
+}
+
+/* Contact Page Media Queries */
+.text-inputs{
+  grid-template-areas: 
+  "name"
+  "email"
+  "subject"
+  "phone"
+  "message";
+}
+
+.contact-info > div{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  padding-bottom: .7rem;
+}
+
+.contact-info > div:last-child{
+  border-bottom: none;
+}
+
+.contact-info > div .fas{
+  margin-bottom: .4rem;
+}
+
+.map-container img{
+  height: 300px;
+  width: 100%;
+}
+
+
+
+
+/* Footer Styling */
+.footer-container{
+  width:90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .8rem;
+}
+
+.footer-container i{
+  margin-right: .7rem;
+}
+

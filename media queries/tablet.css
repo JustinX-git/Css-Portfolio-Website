@@ -1,0 +1,46 @@
+.showcase-container{
+  height: 30rem;
+}
+
+.nav-bar{
+  padding-bottom: .8rem;
+}
+
+
+/* Home page media queries */
+#home-A > p,
+#home-C > p{
+  font-size: 1rem;
+}
+
+
+.specialties, .creative-process{
+  width: 95%;
+  gap: 0 1rem;
+  padding: .4rem .5rem;
+}
+
+.specialties p, .creative-process div p{
+  font-size: .85rem;
+}
+
+.creative-process h3{
+  font-size: .9rem;
+}
+
+/* About Page media queries  */
+#about-B{
+  width: 90%;
+}
+
+.bio-image{
+  height: 100%;
+}
+
+.testimonials{
+ width: 90%;
+}
+
+.testimonials p{
+ font-size: .85rem;
+}

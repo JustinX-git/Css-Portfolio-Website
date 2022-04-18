@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Dosis', sans-serif;
+}
+
+a{
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+}
+
+.bg-light__gray{
+  background: hsl(0, 0%, 95%);
+}
+
+/* Header Section */
+
+.header-container{
+  background: url(../img/showcase.jpg) center 30% /cover;
+  color: #fff;
+  border-bottom: 2px solid goldenrod;
+}
+
+.nav-bar{
+  width: 100%;
+}
+
+.nav-wrapper{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-wrapper #logo{
+  width: 8%;
+}
+
+.nav-wrapper ul{
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 1.2rem;
+}
+
+.nav-wrapper ul li{
+ height: 40%;
+ cursor: pointer;
+}
+
+.nav-wrapper ul li a{
+  position: relative;
+}
+
+.nav-wrapper ul li a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.nav-wrapper ul a:hover:before{
+  opacity: 1;
+}
+#active{
+  color: #fff;
+}
+
+#active::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: gold;
+  bottom: -5px;
+  opacity: 1;
+}
+
+/* About Section-A */
+#about-A{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom-line{
+  width: 5%;
+  height: 3px;
+  margin: auto;
+  background: hsl(43, 74%, 59%);
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section-B */
+#about-B{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.bio-info{
+  display: grid;
+  grid-template-areas:
+  "bioimage bio bio"
+  "aw1 aw2 aw3";
+  column-gap: 1.2rem;
+  row-gap: 2rem;
+}
+
+.bio-image{
+  grid-area: bioimage;
+  width: 100%;
+}
+
+.bio-info h4{
+ margin-bottom: .3rem;
+}
+
+.about-info{
+  grid-area: bio;
+  padding: 1.5rem .8rem;
+  border-left: 3px solid goldenrod;
+}
+
+.award-1{
+  grid-area: aw1;
+}
+.award-2{
+  grid-area: aw2;
+}
+.award-3{
+  grid-area: aw3;
+}
+
+.award-1 .fas,
+.award-2 .fas,
+.award-3 .fas{
+  color: goldenrod;
+  margin-bottom: .8rem;
+}
+
+/* About Section-C */
+#about-C{
+  width: 100%;
+  margin-top: 2rem;
+  background: hsl(0, 0%, 10%);
+  color: #fff;
+  padding: 1.2rem 0;
+}
+
+.progress-container{
+  width: 70%;
+  margin: auto;
+}
+
+.progress{
+  height:20px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  margin-bottom: .6rem;
+}
+
+.progress div{
+  color: #fff;
+  background: goldenrod;
+  height: 100%;
+}
+
+#about-C h2{
+  text-align: center;
+}
+
+/* About Section-D */
+#about-D{
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.about-logos{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1.2rem;
+}
+
+.about-logos img{
+  margin: auto;
+  width: 70%;
+}
+
+/* About Section-E */
+#about-E{
+  width: 100%;
+  margin: 3rem 0;
+}
+
+#about-E h2, #about-E > p{
+  text-align: center;
+}
+
+.testimonials{
+  width: 80%;
+  margin: 2rem auto 0 auto ;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1.2rem;
+}
+
+.testimonials p{
+  padding: .5rem;
+  border: 1px solid goldenrod;
+  margin-bottom: .8rem;
+  background: hsl(0, 0%, 98%);
+}
+
+.testimonials ul{
+  display: flex;
+  align-items: center;
+  column-gap: .3rem;
+}
+
+.testimonials ul li img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+/* Footer Section */
+footer{
+  margin-top: 0rem;
+  background: hsl(0, 0%, 10%);
+  color: #fff;
+  border-top: 2px solid goldenrod;
+}
+
+.footer-container{
+  width:80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem;
+}
+
+.footer-container i{
+  margin-right: 2rem;
+  border: 2px solid #fff;
+  padding: .4rem;
+  border-radius: 100%;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.footer-container i:hover{
+  background: hsl(43, 74%, 39%);
+}
+
+
+/* ScrollBar Styles */
+body::-webkit-scrollbar{
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track{
+  width: 5px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{  
+  background: hsla(212, 25%, 43%, 0.352);
+  border-radius: 50px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}

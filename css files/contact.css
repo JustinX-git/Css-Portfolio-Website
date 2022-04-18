@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Dosis', sans-serif;
+}
+
+a{
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+}
+
+.bg-light__gray{
+  background: hsl(0, 0%, 95%);
+}
+
+/* Header Section */
+
+.header-container{
+  background: url(../img/showcase.jpg) center 30% /cover;
+  color: #fff;
+  border-bottom: 2px solid goldenrod;;
+}
+
+.nav-bar{
+  width: 100%;
+}
+
+.nav-wrapper{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-wrapper #logo{
+  width: 8%;
+}
+
+.nav-wrapper ul{
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 1.2rem;
+}
+
+.nav-wrapper ul li{
+ height: 40%;
+ cursor: pointer;
+}
+
+.nav-wrapper ul li a{
+  position: relative;
+}
+
+.nav-wrapper ul li a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.nav-wrapper ul a:hover:before{
+  opacity: 1;
+}
+
+#active{
+  color: #fff;
+}
+
+#active::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: gold;
+  bottom: -5px;
+  opacity: 1;
+}
+
+/* Contact Section-A */
+#contact-A{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom-line{
+  width: 5%;
+  height: 3px;
+  margin: auto;
+  background: hsl(43, 74%, 59%);
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section-B */
+#contact-B{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#contact-B form{
+  width: 100%;
+}
+
+.text-inputs{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+  "name email"
+  "subject phone"
+  "message message";
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.name-input{
+  grid-area: name;
+}
+.email-input{
+  grid-area: email;
+}
+.subject-input{
+  grid-area: subject;
+}
+.phone-input{
+  grid-area: phone;
+}
+
+.message-input{
+  grid-area: message;
+  height: 100px;
+}
+
+.text-input{
+  padding: .5rem 1rem;
+}
+
+.text-input:focus{
+  outline-color: rgba(218, 165, 32, 0.719);
+}
+
+.recaptcha-container{
+  margin-top: 1rem;
+}
+
+.submit-btn{
+  width: 50%;
+  display: block;
+  margin: auto;
+  border: none;
+  color: #fff;
+  padding: .5rem 0;
+  border-radius: 3px;
+  background: hsl(0, 0%, 9%);
+  transition: all .6s ease;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  background: hsl(22, 58%, 11%)
+}
+
+/* Contact Section-C */
+#contact-C{
+  width: 100%;
+  margin-top: 2rem;
+  background: hsl(0, 0%, 10%);
+  padding: 1.2rem 0;
+}
+
+.contact-info{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  color: #aaa;
+}
+
+/* Contact Section-D */
+#contact-D{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-top: 2px solid goldenrod;
+}
+
+.map-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.map-container img{
+  height: 600px;
+  width: 100%;
+}
+
+/*Footer Section*/
+
+footer{
+  margin-top: 0rem;
+  background: hsl(0, 0%, 10%);
+  color: #fff;
+  border-top: 2px solid goldenrod;
+}
+
+.footer-container{
+  width:80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem;
+}
+
+.footer-container i{
+  margin-right: 2rem;
+  border: 2px solid #fff;
+  padding: .4rem;
+  border-radius: 100%;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.footer-container i:hover{
+  background: hsl(43, 74%, 39%);
+}
+
+/* ScrollBar Styles */
+body::-webkit-scrollbar{
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track{
+  width: 5px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{  
+  background: hsla(212, 25%, 43%, 0.352);
+  border-radius: 50px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
